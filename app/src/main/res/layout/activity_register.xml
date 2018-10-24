@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/suri"
     tools:context=".RegisterActivity">
 
@@ -24,7 +25,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="200dp"
             android:orientation="vertical">
 
 
@@ -32,12 +32,11 @@
                 android:backgroundTint="#fff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
+                android:layout_margin="20dp"
                 android:hint="Name"
                 android:textColor="#fff"
                 android:textColorHint="#fff"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <EditText
                 android:backgroundTint="#fff"
@@ -45,12 +44,10 @@
                 android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="50dp"
+                android:layout_margin="20dp"
                 android:hint="Email id"
                 android:textColorHint="#fff"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
 
 
@@ -60,12 +57,10 @@
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="50dp"
+                android:layout_margin="20dp"
                 android:hint="Password"
                 android:textColorHint="#ffff"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
 
             <EditText
@@ -74,12 +69,10 @@
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="50dp"
+                android:layout_margin="20dp"
                 android:hint="Conform Password"
                 android:textColorHint="#fff"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
 
             <EditText
@@ -88,34 +81,33 @@
                 android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="50dp"
+                android:layout_margin="20dp"
                 android:hint="Phone Number"
                 android:textColorHint="#fff"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <Button
                 android:layout_width="250dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:background="@drawable/buttonstyleselector"
                 android:text="Register"
                 android:textColor="#fff"
-                android:textSize="25dp" />
+                android:textSize="25sp"
+                android:textStyle="bold"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_margin="20dp">
 
                 <TextView
-                    android:layout_width="197dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
+                    android:layout_weight="0.4"
+                    android:padding="10dp"
                     android:text="Already A Member ?"
                     android:textColor="#fff"
                     android:textSize="20dp"
@@ -123,15 +115,15 @@
 
                 <Button
                     android:id="@+id/Login"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
                     android:background="@android:color/transparent"
-                    android:gravity="center"
                     android:text="Login"
                     android:textAllCaps="false"
                     android:textColor="#fff"
-                    android:textSize="22dp"
+                    android:textSize="22sp"
                     android:textStyle="bold" />
 
 
@@ -140,4 +132,5 @@
 
         </LinearLayout>
     </ScrollView>
-</RelativeLayout>
+
+</LinearLayout>

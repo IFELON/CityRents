@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CityRents</string>
+    <string name="mail">Email Id</string>
 </resources>
