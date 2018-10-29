@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Imageslider">
+
+
+      <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent">
+
+          <ViewFlipper
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:autoStart="true"
+              android:flipInterval="1500">
+
+                  <ImageView
+                      android:src="@drawable/bgb"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent" />
+                  <ImageView
+                      android:src="@drawable/ld"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent" />
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/tenants"/>
+
+                   <ImageView
+                      android:src="@drawable/ret"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent" />
+                  <ImageView
+                      android:src="@drawable/by"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent" />
+          </ViewFlipper>
+
+      </RelativeLayout>
+
+
+      </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
